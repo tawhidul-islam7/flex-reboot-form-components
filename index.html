@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5 Layout</title>
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <!-- Centered Content -->
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <div class="box">Lorem ipsum dolor sit.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Layout Examples -->
+  <div class="container">
+    <!-- Justify Content Around -->
+    <div class="row justify-content-around">
+      <div class="col-4">
+        <div class="box">One of two columns</div>
+      </div>
+      <div class="col-4">
+        <div class="box">One of two columns</div>
+      </div>
+    </div>
+
+    <!-- Justify Content Between -->
+    <div class="row justify-content-between">
+      <div class="col-4">
+        <div class="box">One of two columns</div>
+      </div>
+      <div class="col-4">
+        <div class="box">One of two columns</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Typography -->
+  <div class="container">
+    <h1>Lorem ipsum dolor sit.</h1>
+    <p class="h1">Lorem ipsum dolor sit amet.</p>
+    <p class="lead">Lorem ipsum dolor sit amet.</p>
+  </div>
+
+  <!-- Inline List -->
+  <div class="container">
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="https://www.facebook.com/tawhidulislam87">Home</a></li>
+      <li class="list-inline-item">Home</li>
+      <li class="list-inline-item">Home</li>
+      <li class="list-inline-item">Home</li>
+      <li class="list-inline-item">Home</li>
+    </ul>
+  </div>
+
+  <!-- Responsive Table -->
+  <div class="container">
+    <div class="table-responsive">
+      <table class="table table-hover table-primary table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Forms -->
+  <div class="container">
+    <!-- Basic Form -->
+    <form>
+      <div class="mb-3">
+        <label for="email1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email1" name="email1" required>
+      </div>
+      <div class="mb-3">
+        <label for="password1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password1" name="password1" required>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="check1">
+        <label class="form-check-label" for="check1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!-- File Input -->
+    <div>
+      <label for="formFileLg" class="form-label">Large file input example</label>
+      <input class="form-control form-control-lg" id="formFileLg" type="file">
+    </div>
+
+    <!-- Color Picker -->
+    <label for="exampleColorInput" class="form-label">Color picker</label>
+    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+
+    <!-- Select Dropdown -->
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+
+    <!-- Range Input -->
+    <label for="customRange1" class="form-label">Example range</label>
+    <input type="range" class="form-range" id="customRange1">
+  </div>
+
+  <!-- Input Groups -->
+  <div class="container">
+    <div class="input-group mb-3">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+      <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+    </div>
+  </div>
+
+  <!-- Validation Form -->
+  <div class="container">
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+        <label for="f_name" class="form-label">First name</label>
+        <input type="text" class="form-control" id="f_name" name="f_name" placeholder="Enter your first name" required>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Enter your first name.</div>
+      </div>
+      <div class="col-md-4">
+        <label for="l_name" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="l_name" name="l_name" placeholder="Enter your last name" required>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Enter your last name.</div>
+      </div>
+      <div class="col-md-12">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Enter your email address.</div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+          <div class="invalid-feedback">You must agree before submitting.</div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Modal -->
+  <div class="container">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accordion -->
+  <div class="container">
+    <div class="accordion" id="acc_ex1">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c_one" aria-expanded="true" aria-controls="c_one">
+            Lorem ipsum dolor sit amet.
+          </button>
+        </h2>
+        <div id="c_one" class="accordion-collapse collapse show" data-bs-parent="#acc_ex1">
+          <div class="accordion-body">
+            <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c_two" aria-expanded="false" aria-controls="c_two">
+            Lorem ipsum dolor sit amet.
+          </button>
+        </h2>
+        <div id="c_two" class="accordion-collapse collapse" data-bs-parent="#acc_ex1">
+          <div class="accordion-body">
+            <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c_three" aria-expanded="false" aria-controls="c_three">
+            lorem ipsum dolor sit amet.
+          </button>
+        </h2>
+        <div id="c_three" class="accordion-collapse collapse" data-bs-parent="#acc_ex1">
+          <div class="accordion-body">
+            <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Tabs -->
+  <div class="container">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+      </li>
+      <li class="nav-item" role="presentation"></li>
+        <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Disabled</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">Lorem ipsum dolor sit amet.</div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">Lorem ipsum dolor sit amet.</div>
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">Lorem ipsum dolor sit amet.</div>
+      <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">Lorem ipsum dolor sit amet.</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="world health organization">
+      WHO
+    </button>
+  </div>
+
+  <!-- Carousel -->
+  <div class="container">
+    <div id="car1" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#car1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#car1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#car1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="img/media-qurey.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/media-qurey.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/media-qurey.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#car1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#car1" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center py-3 bg-secondary text-white">
+      <p>Bootstrap 5 Layout</p>
+    </div>
+  </footer>
+
+  <!-- JS Links -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
